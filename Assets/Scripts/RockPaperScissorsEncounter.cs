@@ -1,4 +1,7 @@
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Sprites;
 
 public class RockPaperScissorsEncounter : MonoBehaviour
 {
@@ -14,6 +17,10 @@ public class RockPaperScissorsEncounter : MonoBehaviour
     [SerializeField] private LivesManager livesManager;
     [SerializeField] private AudioSource damageSound;
     [SerializeField] private AudioSource winSound;
+    [SerializeField] private Image Hands;
+    [SerializeField] private Sprite Rock;
+    [SerializeField] private Sprite Scissors;
+    [SerializeField] private Sprite Paper;
 
     private Choice enemyChoice;
 
@@ -41,16 +48,19 @@ public class RockPaperScissorsEncounter : MonoBehaviour
     public void ChooseRock()
     {
         CheckResult(Choice.Rock);
+        Hands.sprite = Rock;
     }
 
     public void ChoosePaper()
     {
         CheckResult(Choice.Paper);
+        Hands.sprite = Paper;
     }
 
     public void ChooseScissors()
     {
         CheckResult(Choice.Scissors);
+        Hands.sprite = Scissors;
     }
 
     // rock paper scissors logic
