@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "drunken-brawls.slnx"
+    "dotnet.defaultSolution": "drunken brawls.slnx"
 }
