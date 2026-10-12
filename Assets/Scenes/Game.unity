@@ -175,9 +175,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LivesManager
   hearts:
-  - {fileID: 860825221}
-  - {fileID: 2141775729}
-  - {fileID: 59167610}
+  - {fileID: 107341988}
+  - {fileID: 1473055633}
+  - {fileID: 506284600}
+  heart1: {fileID: 107341988}
+  heart2: {fileID: 1473055633}
+  heart3: {fileID: 506284600}
+  brokenHeart: {fileID: 21300000, guid: 332d7d00f34b146bcbc9f3e785fa07ca, type: 3}
 --- !u!114 &22083123
 MonoBehaviour:
   m_ObjectHideFlags: 0
