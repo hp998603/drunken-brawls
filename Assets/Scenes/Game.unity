@@ -859,6 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701886937}
   - component: {fileID: 701886936}
+  - component: {fileID: 701886938}
   m_Layer: 0
   m_Name: stores_1_0
   m_TagString: Untagged
@@ -933,13 +934,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701886935}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 0, y: 1.5, z: -6.5}
+  m_LocalRotation: {x: -0, y: 0.86602545, z: -0, w: 0.49999994}
+  m_LocalPosition: {x: 6.5, y: 0.08064997, z: -2.3738601}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1851591624}
   m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
+--- !u!114 &701886938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701886935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ae7efa7e7db054da1662587238af2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundScroll
+  scrollSpeed: 0.5
+  isScrolling: 1
+  Building: 1
 --- !u!1 &711093129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundScroller
   scrollSpeed: -0.05
   isScrolling: 1
+  Building: 0
 --- !u!1 &947197930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,6 +2343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757247795}
   - component: {fileID: 1757247794}
+  - component: {fileID: 1757247796}
   m_Layer: 0
   m_Name: stores_1_2
   m_TagString: Untagged
@@ -2400,13 +2418,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757247793}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 0, y: 2.5, z: -1.5}
+  m_LocalRotation: {x: -0, y: -0.86602545, z: -0, w: 0.49999994}
+  m_LocalPosition: {x: 6.5, y: 1.08065, z: 1.67614}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1851591624}
   m_LocalEulerAnglesHint: {x: 0, y: -120, z: 0}
+--- !u!114 &1757247796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757247793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ae7efa7e7db054da1662587238af2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundScroll
+  scrollSpeed: 0.5
+  isScrolling: 1
+  Building: 1
 --- !u!1 &1781887414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +2673,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 936324336}
+  - {fileID: 701886937}
+  - {fileID: 1757247795}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1851591625
@@ -2899,5 +2934,3 @@ SceneRoots:
   - {fileID: 1139853268}
   - {fileID: 947197933}
   - {fileID: 1781887415}
-  - {fileID: 701886937}
-  - {fileID: 1757247795}
